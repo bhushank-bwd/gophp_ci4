@@ -15,3 +15,6 @@ GoPHP CI4 Tutorial
 			composer create-project codeigniter4/appstarter project-folder-name
 	
 	Note: Composer installation is always recommended
+
+	Make output_compression commented in php.ini
+
