@@ -1,0 +1,17 @@
+GoPHP CI4 Tutorial
+
+2) CodeIgniter 4 Server Requirements
+	
+	a) Enable mbstring and intl extension php.ini and restart
+	b) The following PHP extensions should be enabled on your server: php-json, php-mysqlnd, php-xml(php 7.2 already installed and confirm it, check in phpinfo())
+	c) To work with CURLRequest, you will need libcurl installed
+
+3)  CodeIgniter 4 Installation
+
+	We can install CodeIgniter in the following ways: 
+		Manually:
+			Download, Extracct, copy to server location
+		Using Composer:
+			composer create-project codeigniter4/appstarter project-folder-name
+	
+	Note: Composer installation is always recommended

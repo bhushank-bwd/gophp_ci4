@@ -1,0 +1,65 @@
+CRITICAL - 2023-04-12 09:45:09 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-04-12 07:46:11 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH\Config\Events.php on line 28.
+ 1 APPPATH\Config\Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 07:46:16 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH\Config\Events.php on line 28.
+ 1 APPPATH\Config\Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 07:46:18 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH\Config\Events.php on line 28.
+ 1 APPPATH\Config\Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 07:46:18 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH\Config\Events.php on line 28.
+ 1 APPPATH\Config\Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 07:46:18 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH\Config\Events.php on line 28.
+ 1 APPPATH\Config\Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 07:46:18 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH\Config\Events.php on line 28.
+ 1 APPPATH\Config\Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 07:46:19 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH\Config\Events.php on line 28.
+ 1 APPPATH\Config\Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 07:46:19 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH\Config\Events.php on line 28.
+ 1 APPPATH\Config\Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 07:46:19 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH\Config\Events.php on line 28.
+ 1 APPPATH\Config\Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 07:47:25 --> Your zlib.output_compression ini directive is turned on. This will not work well with output buffers.
+in APPPATH\Config\Events.php on line 28.
+ 1 APPPATH\Config\Events.php(28): CodeIgniter\Exceptions\FrameworkException::forEnabledZlibOutputCompression()
+ 2 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 3 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
