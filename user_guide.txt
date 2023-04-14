@@ -18,3 +18,7 @@ GoPHP CI4 Tutorial
 
 	Make output_compression commented in php.ini
 
+
+7) New controller creation 
+	in codeigniter 4.2, you can not use controller in url/routing, you can use routes as CI3 
+
