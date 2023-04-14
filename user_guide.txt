@@ -22,6 +22,8 @@ GoPHP CI4 Tutorial
 7) New controller creation 
 	in codeigniter 4.2, you can not use controller in url/routing, you can use routes as CI3
 
+	php spark make:controller User for creation of controller
+
 8) Removing public and index.php from URL | CodeIgniter 4 Tutorials 
 	
 	Step 1: Open App.php File from the Location: c:/xampp/htdocs/ci4/app/Config/App.php
