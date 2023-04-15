@@ -44,3 +44,7 @@ GoPHP CI4 Tutorial
 9) Remapping method calls in Controller class | CodeIgniter 4 Tutorials 
 
 	not execute because CI 4.2 not allow direct Controller/method in URL 
+
+10) Views in CodeIgniter 4 | Loading Multiple views
+	
+	3 views created in views folder and load with echo view('view_name');

@@ -8,4 +8,10 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+    public function home()
+    {
+        echo view('user_header');
+        echo view('user_home');
+        echo view('user_footer');
+    }
 }
