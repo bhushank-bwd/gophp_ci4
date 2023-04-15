@@ -41,3 +41,6 @@ GoPHP CI4 Tutorial
 	$pathsPath = FCPATH . '../app/Config/Paths.php';  To 
 	$pathsPath = FCPATH . 'app/Config/Paths.php';
 
+9) Remapping method calls in Controller class | CodeIgniter 4 Tutorials 
+
+	not execute because CI 4.2 not allow direct Controller/method in URL 
