@@ -52,3 +52,6 @@ GoPHP CI4 Tutorial
 11) Passing data to views | Data Iteration in views | CodeIgniter 4 Tutorials 
 	template engine <?= ?>
 	if($cond'n);foreach($array as $row);endforeach;endif; 
+
+12) HTML Table class in CodeIgniter 4
+	ref https://codeigniter4.github.io/userguide/outgoing/table.html

@@ -32,6 +32,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('welcome','Welcome::index');
 $routes->get('user','Home::home');
+$routes->get('table','Data::index');
 $routes->get('welcome/(:any)','Welcome::home/$1');
 
 
