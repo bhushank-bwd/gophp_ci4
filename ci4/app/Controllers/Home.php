@@ -10,8 +10,11 @@ class Home extends BaseController
     }
     public function home()
     {
-        echo view('user_header');
-        echo view('user_home');
-        echo view('user_footer');
+        $data = array(
+            'title'=>'Home Page',
+            'course'=>'Web Technology',
+            'subjects'=>['HTML','PHP','CSS','Bootstrap','Javascript'],
+        );
+        echo view('home',$data);
     }
 }
