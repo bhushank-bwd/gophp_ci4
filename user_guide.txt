@@ -48,3 +48,7 @@ GoPHP CI4 Tutorial
 10) Views in CodeIgniter 4 | Loading Multiple views
 	
 	3 views created in views folder and load with echo view('view_name');
+
+11) Passing data to views | Data Iteration in views | CodeIgniter 4 Tutorials 
+	template engine <?= ?>
+	if($cond'n);foreach($array as $row);endforeach;endif; 
