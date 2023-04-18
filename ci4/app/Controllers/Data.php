@@ -55,4 +55,21 @@ class Data extends BaseController
         $records['table'] = $table->generate();
         return view('table',$records);
     }
+    public function parser()
+    {
+        $parser = \Config\Services::parser();
+        $data = array(
+            'title'=>"View Parser Title",
+            'body'=>"View Parser Body",
+            'subject_list' => [
+                ['sub'=>'English','description'=>"s fkjnaskjfnasndaksnmdk.0"],
+                ['sub'=>'Maths','description'=>"s 54etdsfvdsgrthrgdsvdsv fdfvdsvdsfcs.0"],
+                ['sub'=>'History','description'=>"s r4tdsvdsfaefefw4esdfdsv.0"],
+                ['sub'=>'Science','description'=>"s dfgdfgdsgdsfdsf.0"],
+            ],
+            'status'=>false,
+        );
+        $parser->setData($data);
+        echo $parser->render('parser');
+    }
 }

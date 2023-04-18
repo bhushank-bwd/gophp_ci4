@@ -55,3 +55,6 @@ GoPHP CI4 Tutorial
 
 12) HTML Table class in CodeIgniter 4
 	ref https://codeigniter4.github.io/userguide/outgoing/table.html
+
+13) View Parser class in CodeIgniter 4
+	ref https://codeigniter4.github.io/userguide/outgoing/view_parser.html#loop-substitutions

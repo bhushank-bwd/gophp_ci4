@@ -33,6 +33,7 @@ $routes->get('/', 'Home::index');
 $routes->get('welcome','Welcome::index');
 $routes->get('user','Home::home');
 $routes->get('table','Data::index');
+$routes->get('parser','Data::parser');
 $routes->get('welcome/(:any)','Welcome::home/$1');
 
 
