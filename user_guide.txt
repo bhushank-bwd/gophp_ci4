@@ -58,3 +58,6 @@ GoPHP CI4 Tutorial
 
 13) View Parser class in CodeIgniter 4
 	ref https://codeigniter4.github.io/userguide/outgoing/view_parser.html#loop-substitutions
+
+14) View Filters in CodeIgniter 4 _ View Parser Class in CodeIgniter 4
+	ref https://codeigniter4.github.io/userguide/outgoing/view_parser.html#filters

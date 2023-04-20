@@ -34,6 +34,7 @@ $routes->get('welcome','Welcome::index');
 $routes->get('user','Home::home');
 $routes->get('table','Data::index');
 $routes->get('parser','Data::parser');
+$routes->get('filter','Data::filter');
 $routes->get('welcome/(:any)','Welcome::home/$1');
 
 

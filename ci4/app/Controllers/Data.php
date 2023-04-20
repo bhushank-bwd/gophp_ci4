@@ -6,6 +6,10 @@ use App\Controllers\BaseController;
 use \CodeIgniter\View\Table;
 class Data extends BaseController
 {
+    public $parser;
+    public function __construct(){
+        $this->parser =  \Config\Services::parser();
+    }
     public function index()
     {
         // $data = [['Name','City','State'],['Bhushan','Kop','Maharashtra'],['Ritesh','Panjim','Goa']];
@@ -57,7 +61,7 @@ class Data extends BaseController
     }
     public function parser()
     {
-        $parser = \Config\Services::parser();
+       
         $data = array(
             'title'=>"View Parser Title",
             'body'=>"View Parser Body",
@@ -69,7 +73,19 @@ class Data extends BaseController
             ],
             'status'=>false,
         );
-        $parser->setData($data);
-        echo $parser->render('parser');
+        $this->parser->setData($data);
+        echo $this->parser->render('parser');
+    }
+    public function filter()
+    {
+       
+        $data = array(
+            'title'=>"View Parser Title",
+            'body'=>"View Parser Body",
+            'date' => '25-05-2023',
+            'price' => '25.92',
+            'status'=>false,
+        );
+        echo $this->parser->setData($data)->render('filter');
     }
 }
