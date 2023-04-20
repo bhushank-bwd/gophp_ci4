@@ -84,6 +84,7 @@ class Data extends BaseController
             'body'=>"View Parser Body",
             'date' => '25-05-2023',
             'price' => '25.92',
+            'mob' => '8244845415',
             'status'=>false,
         );
         echo $this->parser->setData($data)->render('filter');

@@ -32,7 +32,9 @@ class View extends BaseView
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        'hideNumbers'=>'\CodeIgniter\View\Filters::hideNumbers'
+    ];
 
     /**
      * Parser Plugins provide a way to extend the functionality provided

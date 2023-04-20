@@ -247,4 +247,17 @@ class Filters
     {
         return ucwords(strtolower($value));
     }
+    public static function hideNumbers(string $value, int $number = 4): string
+    {
+        
+        $txt = '';
+        for($i=0;$i<strlen($value);$i++){
+            if($i<$number){
+                $txt .= $value[$i];
+            }else{
+                $txt .= "*";
+            }
+        }
+        return $txt;
+    }
 }

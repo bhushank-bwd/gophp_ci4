@@ -12,5 +12,6 @@
     <h2>{date|date(Y-m-d)}</h2>
     <h2>{date|date_modify(+5days)|date(l dS F Y)}</h2>
     <h2>{price|local_currency(INR)}</h2>
+    <h2>Custom Filter {mob|hideNumbers}</h2>
 </body>
 </html>
