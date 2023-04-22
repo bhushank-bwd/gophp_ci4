@@ -17,4 +17,22 @@ class Home extends BaseController
         );
         echo view('home',$data);
     }
+    public function viewDemo(){
+        $data = [
+            'page_title'=>"CI4 Home",
+            'page_header'=>"Home Page"
+        ];
+        echo view('layouts/header',$data);
+        echo view('view-demo');
+        echo view('layouts/footer');
+    }
+    public function about(){
+        $data = [
+            'page_title'=>"CI4 Home",
+            'page_header'=>"About Page"
+        ];
+        echo view('layouts/header',$data);
+        echo view('view-demo');
+        echo view('layouts/footer');
+    }
 }
