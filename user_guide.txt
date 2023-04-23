@@ -63,3 +63,4 @@ GoPHP CI4 Tutorial
 	ref https://codeigniter4.github.io/userguide/outgoing/view_parser.html#filters
 
 	git remote add origin https://github.com/bhushank-bwd/laravel_8.git
+	git remote set-url https://github.com/bhushank-bwd/gophp_ci4.git
