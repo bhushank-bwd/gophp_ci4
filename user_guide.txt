@@ -64,3 +64,10 @@ GoPHP CI4 Tutorial
 
 	git remote add origin https://github.com/bhushank-bwd/laravel_8.git
 	git remote set-url origin https://github.com/bhushank-bwd/gophp_ci4.git
+
+17) Theme integration in CI4
+	Download or create html bootstrap template
+	Keep assets folder in public which contains js css images
+	use <?= base_url() ?> to load asset files
+	remove header and footer from view file and paste it in layouts header/footer file
+	use template engine which is done in 5da4a3a9d5244c6e6b5b1ec2934bb652dcc1b28e commit
