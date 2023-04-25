@@ -74,3 +74,8 @@ GoPHP CI4 Tutorial
 
 18) URI Routing
 	https://codeigniter4.github.io/userguide/incoming/routing.html
+
+19) Database Configuration in CodeIgniter 4
+
+20) Database Configuration by using .env file _ CodeIgniter 4 Tutorials
+	.env db group must present in app/config/database.php
