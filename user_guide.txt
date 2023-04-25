@@ -71,3 +71,6 @@ GoPHP CI4 Tutorial
 	use <?= base_url() ?> to load asset files
 	remove header and footer from view file and paste it in layouts header/footer file
 	use template engine which is done in 5da4a3a9d5244c6e6b5b1ec2934bb652dcc1b28e commit
+
+18) URI Routing
+	https://codeigniter4.github.io/userguide/incoming/routing.html
