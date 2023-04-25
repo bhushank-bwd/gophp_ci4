@@ -39,6 +39,7 @@ $routes->get('view','Home::viewDemo');
 $routes->get('view1','Home::newViewDemo');
 $routes->get('about','Home::about');
 $routes->get('welcome/(:any)','Welcome::home/$1');
+$routes->get('db','Welcome::dbTest');
 
 
 /*
