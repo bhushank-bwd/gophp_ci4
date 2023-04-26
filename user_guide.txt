@@ -79,3 +79,5 @@ GoPHP CI4 Tutorial
 
 20) Database Configuration by using .env file _ CodeIgniter 4 Tutorials
 	.env db group must present in app/config/database.php
+
+21) 1- php spark make:model  UsersModel
