@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\UsersModel;
 use \CodeIgniter\View\Table;
 class Data extends BaseController
 {
@@ -88,5 +89,12 @@ class Data extends BaseController
             'status'=>false,
         );
         echo $this->parser->setData($data)->render('filter');
+    }
+    public function getData(){
+        $subject = new UsersModel();
+        echo'<pre>';
+        print_r($subject->getData());
+        die;
+        
     }
 }
