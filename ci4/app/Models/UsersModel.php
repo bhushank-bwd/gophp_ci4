@@ -14,4 +14,14 @@ class UsersModel extends Model
         ];
         return $subjectArray;
     }
+    public function getList(){
+        $db = \Config\Database::connect();
+        $query = $db->query('select * from app_url');
+        $res = $query->getResult();
+        if(count($res)){
+            return $res;
+        }else{
+            return false;
+        }
+    }
 }

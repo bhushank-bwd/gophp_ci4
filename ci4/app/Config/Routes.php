@@ -41,6 +41,7 @@ $routes->get('about','Home::about');
 $routes->get('welcome/(:any)','Welcome::home/$1');
 $routes->get('db','Welcome::dbTest');
 $routes->get('model1','Data::getData');
+$routes->get('list','Data::getList');
 
 
 /*

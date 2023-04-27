@@ -97,4 +97,11 @@ class Data extends BaseController
         die;
         
     }
+    public function getList(){
+        $users = new UsersModel();
+        $usersList = $data['users'] = $users->getList();
+        echo'<pre>';
+        print_r($usersList);
+        die;
+    }
 }
