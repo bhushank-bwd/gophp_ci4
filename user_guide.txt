@@ -81,3 +81,7 @@ GoPHP CI4 Tutorial
 	.env db group must present in app/config/database.php
 
 21) 1- php spark make:model  UsersModel
+
+24) 23-1 Custom Libraries
+	task use email library
+	

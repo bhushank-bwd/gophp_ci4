@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Libraries\TestLibrary;
 use App\Models\UsersModel;
 use \CodeIgniter\View\Table;
 class Data extends BaseController
@@ -103,5 +104,12 @@ class Data extends BaseController
         echo'<pre>';
         print_r($usersList);
         die;
+    }
+    public function customLibrary(){
+        $tl = new TestLibrary();
+        echo'<pre>';
+        print_r($tl->getData());
+        die;
+        
     }
 }
