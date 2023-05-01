@@ -112,4 +112,24 @@ class Data extends BaseController
         die;
         
     }
+    public function sendEmail(){
+        $to = "";
+        $subject = "";
+        $message = "<h1>Html message</h1>";
+
+        $mail = \Config\Services::email();
+        $mail->setTo($to);
+        $mail->setSubject($subject);
+        $mail->setMessage($message);
+        $mail->setCC("");
+        $mail->setBCC("");
+        $filepath = 'public/assets/img/1.jpg';
+        $mail->attach($filepath);
+        $mail->setFrom("");
+        if($mail->send()){
+            echo "mail sent";
+        }else{
+            $mail->printDebugger(['headers']);
+        }
+    }
 }

@@ -85,3 +85,5 @@ GoPHP CI4 Tutorial
 24) 23-1 Custom Libraries
 	task use email library
 	
+25) Email library
+	mak proper needed changes in \ci4\app\Config\Email.php
