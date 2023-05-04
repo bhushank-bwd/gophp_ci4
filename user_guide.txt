@@ -90,3 +90,6 @@ GoPHP CI4 Tutorial
 
 26) #26 Form Validations in CodeIgniter 4
 	https://codeigniter4.github.io/userguide/libraries/validation.html
+
+27) Enable development environment in CodeIgniter 4
+	D:\raw_data\CI4\gophp_ci4\ci4\.env change and un comment CI_ENVIRONMENT and change app.baseURL
