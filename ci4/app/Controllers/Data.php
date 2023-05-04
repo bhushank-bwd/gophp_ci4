@@ -132,4 +132,37 @@ class Data extends BaseController
             $mail->printDebugger(['headers']);
         }
     }
+    public function form(){
+        helper('form');
+        $data = [];
+        $rules = [
+            'username'=>'required',
+            'email'=>'required|valid_email',
+            'password'=>[
+                'rules' => 'required',
+                'errors' => [
+                    'required'=> 'Please Enter Strong Password'
+                ]
+            ],
+            // 'phone'=>'required|numeric|exact_length[10]',
+            'phone' => [
+                'rules'=>'required|numeric|exact_length[10]',
+                'errors'=>[
+                    'required'=>'Phone required',
+                    'numeric'=>'Phone {value} is not number',
+                    'exact_length'=>'Phone {value} is not {param} number',
+                ]
+            ]
+        ];
+        if($this->request->getMethod()=='post'){
+            
+            if($this->validate($rules)){
+                echo "ready to save";
+            }else{
+                $data['validation'] = $this->validator;
+            }
+        }
+        
+        return view('form',$data);
+    }
 }

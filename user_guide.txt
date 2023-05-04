@@ -87,3 +87,6 @@ GoPHP CI4 Tutorial
 	
 25) Email library
 	mak proper needed changes in \ci4\app\Config\Email.php
+
+26) #26 Form Validations in CodeIgniter 4
+	https://codeigniter4.github.io/userguide/libraries/validation.html

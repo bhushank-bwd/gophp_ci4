@@ -43,6 +43,8 @@ $routes->get('db','Welcome::dbTest');
 $routes->get('model1','Data::getData');
 $routes->get('list','Data::getList');
 $routes->get('custom-library','Data::customLibrary');
+$routes->get('validator','Data::form');
+$routes->post('validator','Data::form');
 
 
 /*
