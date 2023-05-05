@@ -9,7 +9,12 @@
 </head>
 
 <body>
+    <?php 
+        $pagesession = \CodeIgniter\Config\Services::session();
+    ?>
     <?= isset($validation) ? $validation->listErrors() : "" ?>
+    <?= !empty($pagesession->getTempdata('success')) ? $pagesession->getTempdata('success'): "" ?>
+    <?= !empty($pagesession->getTempdata('error')) ? $pagesession->getTempdata('error'): "" ?>
     <?= form_open('http://localhost:8080/validator'); ?>
     <table>
         <tr>

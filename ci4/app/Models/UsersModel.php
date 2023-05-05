@@ -24,4 +24,14 @@ class UsersModel extends Model
             return false;
         }
     }
+    public function saveData($data){
+       $db = \Config\Database::connect();
+       $builder = $db->table("user");
+       $res =  $builder->insert($data);
+       if($res){
+        return true;
+       }else{
+        return false;
+       } 
+    }
 }

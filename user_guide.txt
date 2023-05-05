@@ -93,3 +93,6 @@ GoPHP CI4 Tutorial
 
 27) Enable development environment in CodeIgniter 4
 	D:\raw_data\CI4\gophp_ci4\ci4\.env change and un comment CI_ENVIRONMENT and change app.baseURL
+
+28)  Contact Form in CodeIgniter 4
+	done but problem in success redirect

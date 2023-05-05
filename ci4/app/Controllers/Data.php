@@ -133,6 +133,7 @@ class Data extends BaseController
         }
     }
     public function form(){
+        $session = \CodeIgniter\Config\Services::session();
         helper('form');
         $data = [];
         $rules = [
@@ -157,7 +158,24 @@ class Data extends BaseController
         if($this->request->getMethod()=='post'){
             
             if($this->validate($rules)){
-                echo "ready to save";
+                $user = new UsersModel();
+                $data = [
+                    'username' => $this->request->getVar('username',FILTER_SANITIZE_STRING),
+                    'email' =>$this->request->getVar('email',FILTER_SANITIZE_STRING),
+                    'password' => $this->request->getVar('password',FILTER_SANITIZE_STRING),
+                    'phone' => $this->request->getVar('phone',FILTER_SANITIZE_STRING),
+                ];
+                $status = $user->saveData($data);
+               
+                
+                if($status){
+                    $session->setTempdata('Success','User created');
+                    // return redirect()->to(current_url());
+                   
+                }else{
+                    $session->setTempdata('error','error');
+                }
+
             }else{
                 $data['validation'] = $this->validator;
             }
