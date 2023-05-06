@@ -96,3 +96,5 @@ GoPHP CI4 Tutorial
 
 28)  Contact Form in CodeIgniter 4
 	done but problem in success redirect
+
+30) create html template with navbar and footer and create two pages for login and register
