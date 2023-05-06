@@ -98,3 +98,5 @@ GoPHP CI4 Tutorial
 	done but problem in success redirect
 
 30) create html template with navbar and footer and create two pages for login and register
+
+31) submit validate register form and send activation link to email address use validation message temp message session success/error response
