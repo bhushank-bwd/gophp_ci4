@@ -100,3 +100,11 @@ GoPHP CI4 Tutorial
 30) create html template with navbar and footer and create two pages for login and register
 
 31) submit validate register form and send activation link to email address use validation message temp message session success/error response
+
+32) create route for link verification and give proper message on link validity,valid link success and error status
+
+33) create login form submit check and give proper meeage and if success set session
+
+34) after login success create dashboard page with proper user setup
+
+35) on login store session table info like browser device and ip address etc and login logout time etc 
