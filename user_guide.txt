@@ -108,3 +108,11 @@ GoPHP CI4 Tutorial
 34) after login success create dashboard page with proper user setup
 
 35) on login store session table info like browser device and ip address etc and login logout time etc 
+
+32) $builder = $this->db->table('users);
+	 $builder->select('*');
+	 $builder->where('column','value');
+	 $result = $builder->get();
+
+	 for count use count($result->getResultArray()) or $result->resultID->num_rows
+	 not use $builder->countAll()
