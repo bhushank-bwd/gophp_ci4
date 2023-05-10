@@ -45,6 +45,13 @@
             </td>
         </tr>
         <tr>
+            <td>Avatar</td>
+            <td>
+                <input type="file" name="avatars[]" multiple="multiple">
+                <small><?= isset($validation) && $validation->hasError('avatars') ? $validation->getError('avatars'):"" ?></small>
+            </td>
+        </tr>
+        <tr>
             <td>Password</td>
             <td>
                 <input type="password" name="password">

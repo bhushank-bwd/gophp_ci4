@@ -140,6 +140,7 @@ class Data extends BaseController
             'username'=>'required',
             'email'=>'required|valid_email',
             'avatar'=>'uploaded[avatar]|max_size[avatar,1024]|ext_in[avatar,png,jpg,gif]',
+            // 'avatars'=>'uploaded[avatar.0]|max_size[avatar,1024]|is_image[avatar]', // commented because 1 wrong file will execute all form submission
             'password'=>[
                 'rules' => 'required',
                 'errors' => [
@@ -181,6 +182,21 @@ class Data extends BaseController
                         }
                     }
                    
+                    $files = $this->request->getFiles();
+                    foreach($files['avatars'] as $img){
+                        if($img->isValid() && !$img->hasMoved()){
+                            $newName = $img->getRandomName();
+                            // if($img->move(WRITEPATH."uploads",$newName)){
+                            if($img->move(WRITEPATH."uploads/multiple/",$img->getName())){
+                                 $session->setTempdata('Success','User created');
+                                
+                            }else{
+                                echo $file->getErrorString()." ".$file->getError();
+                            }
+                        }
+                    }
+                    
+
                     // return redirect()->to(current_url());
                    
                 }else{
