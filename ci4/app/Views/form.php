@@ -15,7 +15,7 @@
     <?= isset($validation) ? $validation->listErrors() : "" ?>
     <?= !empty($pagesession->getTempdata('success')) ? $pagesession->getTempdata('success'): "" ?>
     <?= !empty($pagesession->getTempdata('error')) ? $pagesession->getTempdata('error'): "" ?>
-    <?= form_open('http://localhost:8080/validator'); ?>
+    <?= form_open_multipart('http://localhost:8080/validator'); ?>
     <table>
         <tr>
             <td>username</td>
@@ -34,6 +34,14 @@
             <td>Email</td>
             <td>
                 <input type="text" name="email">
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Avatar</td>
+            <td>
+                <input type="file" name="avatar">
+                <small><?= isset($validation) && $validation->hasError('avatar') ? $validation->getError('avatar'):"" ?></small>
             </td>
         </tr>
         <tr>

@@ -139,6 +139,7 @@ class Data extends BaseController
         $rules = [
             'username'=>'required',
             'email'=>'required|valid_email',
+            'avatar'=>'uploaded[avatar]|max_size[avatar,1024]|ext_in[avatar,png,jpg,gif]',
             'password'=>[
                 'rules' => 'required',
                 'errors' => [
@@ -169,7 +170,17 @@ class Data extends BaseController
                
                 
                 if($status){
-                    $session->setTempdata('Success','User created');
+                    $file = $this->request->getFile('avatar');
+                    if($file->isValid() && !$file->hasMoved()){
+                        $newName = $file->getRandomName();
+                        // if($file->move(WRITEPATH."uploads",$newName)){
+                        if($file->move(WRITEPATH."uploads",$file->getName())){
+                             $session->setTempdata('Success','User created');
+                        }else{
+                            echo $file->getErrorString()." ".$file->getError();
+                        }
+                    }
+                   
                     // return redirect()->to(current_url());
                    
                 }else{
