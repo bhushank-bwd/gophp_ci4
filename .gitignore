@@ -1,1 +1,3 @@
-uploads/*
+ci4/writable/uploads/*
+ci4/writable/logs/*
+ci4/writable/session/*
