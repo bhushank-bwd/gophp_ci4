@@ -46,6 +46,9 @@ $routes->get('custom-library','Data::customLibrary');
 $routes->get('validator','Data::form');
 $routes->post('validator','Data::form');
 
+$routes->group("group",['filter'=>"datefilter"],function($routes){
+    $routes->get('filter','Data::form'); // grouped route with filter
+});
 
 /*
  * --------------------------------------------------------------------

@@ -120,3 +120,5 @@ GoPHP CI4 Tutorial
 44) in user management upload avatar, change password, edit profile, send forgot password link, reset password 
 
 45) Controller Filters in CodeIgniter 4
+
+46) isLoggedIn Filter apply filter for selected controller/routes with grouped routes 
