@@ -116,3 +116,7 @@ GoPHP CI4 Tutorial
 
 	 for count use count($result->getResultArray()) or $result->resultID->num_rows
 	 not use $builder->countAll()
+
+44) in user management upload avatar, change password, edit profile, send forgot password link, reset password 
+
+45) Controller Filters in CodeIgniter 4
