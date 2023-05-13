@@ -45,6 +45,7 @@ $routes->get('list','Data::getList');
 $routes->get('custom-library','Data::customLibrary');
 $routes->get('validator','Data::form');
 $routes->post('validator','Data::form');
+$routes->get('throttler','Data::throttler');
 
 $routes->group("group",['filter'=>"datefilter"],function($routes){
     $routes->get('filter','Data::form'); // grouped route with filter

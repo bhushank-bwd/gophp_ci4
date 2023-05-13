@@ -122,3 +122,6 @@ GoPHP CI4 Tutorial
 45) Controller Filters in CodeIgniter 4
 
 46) isLoggedIn Filter apply filter for selected controller/routes with grouped routes 
+
+47) Throttler in CodeIgniter 4 _ Throttler Class
+	used to limit any action for few times

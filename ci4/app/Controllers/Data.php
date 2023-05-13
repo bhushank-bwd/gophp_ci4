@@ -210,4 +210,13 @@ class Data extends BaseController
         
         return view('form',$data);
     }
+    public function throttler(){
+        $throttler = \Config\Services::throttler();
+        $allow = $throttler->check('view',4,MINUTE);
+        if($allow){
+            echo "allowed";
+        }else{
+            echo "disallowed";
+        }
+    }
 }
