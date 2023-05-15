@@ -125,3 +125,7 @@ GoPHP CI4 Tutorial
 
 47) Throttler in CodeIgniter 4 _ Throttler Class
 	used to limit any action for few times
+
+48) IP Address Blocking using Throttler & Filters
+49) Rate limiting API calls by using Throttler & Filters 
+		=> create filter-before that will block/limit request per ipaddress by using Throttler
